@@ -127,34 +127,31 @@ export default function GalleryPage() {
 
     // Videos
     {
-      type: 'video' as const,
-      src: '/videos/damietta-commercial-moving-service-preparation.mp4',
+      type: 'image' as const,
+      src: '/images/damietta-moving-service-professional-2.webp',
       alt: 'تحضير خدمة النقل التجاري في دمياط',
       title: 'تحضير نقل مكتب كامل',
       category: 'offices',
       location: 'المنطقة الصناعية',
-      date: 'أغسطس 2025',
-      poster: '/images/damietta-moving-service-professional-2.webp'
+      date: 'أغسطس 2025'
     },
     {
-      type: 'video' as const,
-      src: '/videos/damietta-furniture-assembly-service.mp4',
+      type: 'image' as const,
+      src: '/images/furniture-assembly-damietta-expert-7.webp',
       alt: 'خدمة تجميع الأثاث في دمياط',
       title: 'تجميع غرفة نوم كاملة',
       category: 'apartments',
       location: 'دمياط الجديدة',
-      date: 'سبتمبر 2025',
-      poster: '/images/furniture-assembly-damietta-expert-7.webp'
+      date: 'سبتمبر 2025'
     },
     {
-      type: 'video' as const,
-      src: '/videos/damietta-furniture-packing-sealing-service.mp4',
+      type: 'image' as const,
+      src: '/images/furniture-packing-service-damietta.webp',
       alt: 'خدمة تغليف وإغلاق العفش في دمياط',
       title: 'تغليف وحماية الأثاث الفاخر',
       category: 'packing',
       location: 'وسط دمياط',
-      date: 'أغسطس 2025',
-      poster: '/images/furniture-packing-service-damietta.webp'
+      date: 'أغسطس 2025'
     }
   ];
 
@@ -225,22 +222,12 @@ export default function GalleryPage() {
                 {filteredItems.map((item, index) => (
                   <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden card-shadow hover:shadow-2xl transition-shadow duration-300">
                     <div className="relative">
-                      {item.type === 'image' ? (
-                        <img
-                          src={item.src}
-                          alt={item.alt}
-                          className="w-full h-64 object-cover"
-                          loading="lazy"
-                        />
-                      ) : (
-                        <video
-                          src={item.src}
-                          poster={item.poster}
-                          className="w-full h-64 object-cover"
-                          preload="metadata"
-                          muted
-                        />
-                      )}
+                      <img
+                        src={item.src}
+                        alt={item.alt}
+                        className="w-full h-64 object-cover"
+                        loading="lazy"
+                      />
                       
                       {/* Category Badge */}
                       <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-1 rounded-full text-sm font-semibold">
@@ -310,8 +297,7 @@ export default function GalleryPage() {
                   type: item.type,
                   src: item.src,
                   alt: item.alt,
-                  title: `${item.title} - ${item.location}`,
-                  poster: item.poster
+                  title: `${item.title} - ${item.location}`
                 }))}
                 city="general"
                 service="portfolio"

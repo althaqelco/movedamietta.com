@@ -26,13 +26,10 @@ export default function NewDamiettaPackingPage({ jsonLd }: NewDamiettaPackingPro
         <section className="relative bg-gradient-green text-white overflow-hidden">
           <div className="absolute inset-0 bg-black/30"></div>
           <div className="absolute inset-0">
-            <video
-              src="/videos/damietta-furniture-packing-sealing-service.mp4"
+            <img
+              src="/images/furniture-packing-service-damietta.webp"
+              alt="خدمة تغليف العفش في دمياط الجديدة"
               className="w-full h-full object-cover opacity-20"
-              autoPlay
-              muted
-              loop
-              playsInline
             />
           </div>
           <div className="relative container mx-auto px-4 py-16 lg:py-24">
@@ -284,14 +281,11 @@ export default function NewDamiettaPackingPage({ jsonLd }: NewDamiettaPackingPro
               </div>
               
               <div className="relative">
-                <video
-                  src="/videos/damietta-furniture-packing-sealing-service.mp4"
+                <img
+                  src="/images/furniture-packing-service-damietta.webp"
+                  alt="خدمة تغليف العفش المحترفة"
                   className="w-full rounded-2xl shadow-2xl"
-                  controls
-                  poster="/images/furniture-packing-service-damietta.webp"
-                >
-                  Your browser does not support the video tag.
-                </video>
+                />
               </div>
             </div>
           </div>

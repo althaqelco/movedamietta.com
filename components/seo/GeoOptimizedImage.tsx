@@ -95,6 +95,7 @@ export function GeoHeroImage({
       priority={true}
       showCaption={false}
       className={`w-full h-[400px] lg:h-[500px] object-cover ${className}`}
+      style={{ width: "auto", height: "auto" }}
       {...props}
     />
   );

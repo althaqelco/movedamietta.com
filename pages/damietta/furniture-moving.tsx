@@ -459,17 +459,17 @@ export const getStaticProps: GetStaticProps<FurnitureMovingProps> = async () => 
     { src: "/images/furniture-packing-boxes-damietta-family.webp", width: 400, height: 300 }
   ];
 
-  // فيديوهات الخدمة
+  // صور الخدمة (بدلاً من الفيديوهات)
   const serviceVideos = [
     {
-      src: "/videos/damietta-furniture-assembly-service.mp4",
+      src: "/images/damietta-furniture-moving-company-worker-1.webp",
       poster: "/images/damietta-furniture-moving-company-worker-1.webp",
       name: "خدمة فك وتركيب الأثاث في دمياط",
       description: "شاهد كيف يقوم فريقنا المحترف بفك وتركيب الأثاث بعناية ودقة",
       duration: "PT2M30S"
     },
     {
-      src: "/videos/damietta-furniture-packing-sealing-service.mp4", 
+      src: "/images/furniture-packing-service-damietta.webp",
       poster: "/images/furniture-packing-service-damietta.webp",
       name: "خدمة تغليف العفش في دمياط",
       description: "عملية تغليف احترافية لحماية الأثاث أثناء النقل",

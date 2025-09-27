@@ -33,14 +33,11 @@ export default function DamiettaCranePage({ seo, jsonLd }: DamiettaCraneProps) {
         <section className="relative bg-gradient-to-br from-orange-900 to-orange-700 text-white overflow-hidden">
           <div className="absolute inset-0 bg-black/30"></div>
           <div className="absolute inset-0">
-            <video 
+            <img 
+              src="/images/damietta-moving-service-professional-2.webp"
+              alt="خدمة الونش المتخصصة في دمياط"
               className="w-full h-full object-cover opacity-20"
-              autoPlay
-              muted
-              loop
-            >
-              <source src="/videos/damietta-commercial-moving-service-preparation.mp4" type="video/mp4" />
-            </video>
+            />
           </div>
           <div className="relative container mx-auto px-4 py-16 lg:py-24">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -237,13 +234,11 @@ export default function DamiettaCranePage({ seo, jsonLd }: DamiettaCraneProps) {
               </div>
               
               <div className="relative">
-                <video
+                <img
+                  src="/images/damietta-furniture-crane-operator-5.webp"
+                  alt="خدمة الونش وتجميع الأثاث في دمياط"
                   className="w-full rounded-2xl shadow-2xl"
-                  controls
-                  poster="/images/damietta-furniture-crane-operator-5.webp"
-                >
-                  <source src="/videos/damietta-furniture-assembly-service.mp4" type="video/mp4" />
-                </video>
+                />
               </div>
             </div>
           </div>

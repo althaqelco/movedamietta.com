@@ -263,25 +263,22 @@ export default function Home({ jsonLd, featuredCities, featuredServices, heroIma
               title: 'خبير تجميع الأثاث'
             },
             {
-              type: 'video',
-              src: '/videos/damietta-commercial-moving-service-preparation.mp4',
+              type: 'image',
+              src: '/images/damietta-moving-service-professional-2.webp',
               alt: 'تحضير خدمة النقل التجاري في دمياط',
-              title: 'تحضير النقل التجاري',
-              poster: '/images/damietta-moving-service-professional-2.webp'
+              title: 'تحضير النقل التجاري'
             },
             {
-              type: 'video',
-              src: '/videos/damietta-furniture-assembly-service.mp4',
+              type: 'image',
+              src: '/images/furniture-assembly-damietta-expert-7.webp',
               alt: 'خدمة تجميع الأثاث في دمياط',
-              title: 'تجميع وفك الأثاث',
-              poster: '/images/furniture-assembly-damietta-expert-7.webp'
+              title: 'تجميع وفك الأثاث'
             },
             {
-              type: 'video',
-              src: '/videos/damietta-furniture-packing-sealing-service.mp4',
+              type: 'image',
+              src: '/images/furniture-packing-service-damietta.webp',
               alt: 'خدمة تغليف وإغلاق العفش في دمياط',
-              title: 'تغليف وإغلاق محترف',
-              poster: '/images/furniture-packing-service-damietta.webp'
+              title: 'تغليف وإغلاق محترف'
             }
           ]}
           city="general"
