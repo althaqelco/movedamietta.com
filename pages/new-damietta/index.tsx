@@ -1,0 +1,413 @@
+// صفحة دمياط الجديدة الرئيسية - مركز الخدمات
+import { GetStaticProps } from 'next';
+import Link from 'next/link';
+import { EnhancedGeoSEO, GeoHeroImage, GeoImageGrid } from '@/components/seo';
+import { localBusinessLD, serviceLD, combineJsonLd } from '@/lib/seo/jsonld';
+import { buildCityHubTitle, buildCityHubDescription } from '@/lib/seo/meta';
+
+interface NewDamiettaHubProps {
+  jsonLd: object[];
+  services: Array<{
+    name: string;
+    nameEn: string;
+    description: string;
+    url: string;
+    icon: string;
+  }>;
+  featuredImages: Array<{
+    src: string;
+    width: number;
+    height: number;
+  }>;
+}
+
+export default function NewDamiettaHub({ jsonLd, services, featuredImages }: NewDamiettaHubProps) {
+  const city = 'newDamietta' as const;
+  const title = buildCityHubTitle(city);
+  const description = buildCityHubDescription(city);
+
+  return (
+    <>
+      <EnhancedGeoSEO
+        title={title}
+        description={description}
+        canonical="/new-damietta/"
+        city={city}
+        image="/images/new-damietta-moving-company-worker-4.webp"
+        jsonLd={jsonLd}
+      />
+
+      <div className="min-h-screen bg-white">
+        {/* Hero Section */}
+        <section className="relative bg-gradient-to-br from-green-900 to-green-700 text-white">
+          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="relative container mx-auto px-4 py-16 lg:py-24">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+                  شركة نقل عفش في دمياط الجديدة
+                </h1>
+                <p className="text-xl lg:text-2xl text-green-100">
+                  خدمة متميزة لنقل الأثاث والعفش في دمياط الجديدة بأحدث الوسائل والتقنيات
+                </p>
+                
+                {/* Trust Points */}
+                <div className="grid md:grid-cols-2 gap-4 mt-8">
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span>خبرة في دمياط الجديدة +8 سنوات</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span>نقل سريع ومنظم</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span>معرفة تامة بالطرق الحديثة</span>
+                  </div>
+                  <div className="flex items-center space-x-3 space-x-reverse">
+                    <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span>خدمة عملاء متميزة</span>
+                  </div>
+                </div>
+
+                {/* CTA Buttons */}
+                <div className="flex flex-wrap gap-4 mt-8">
+                  <a
+                    href="tel:+201063374834"
+                    className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center space-x-2 space-x-reverse"
+                  >
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    <span>اتصل الآن</span>
+                  </a>
+                  <a
+                    href="https://wa.me/201063374834"
+                    className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center space-x-2 space-x-reverse"
+                  >
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                    </svg>
+                    <span>واتساب</span>
+                  </a>
+                  <Link 
+                    href="/new-damietta/quote"
+                    className="bg-white hover:bg-gray-100 text-green-900 px-6 py-3 rounded-lg font-semibold transition-colors"
+                  >
+                    طلب عرض سعر مجاني
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:order-first">
+                <GeoHeroImage
+                  src="/images/new-damietta-moving-company-worker-4.webp"
+                  city={city}
+                  width={600}
+                  height={400}
+                  className="rounded-lg shadow-xl"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Grid */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                خدماتنا في دمياط الجديدة
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                نقدم جميع خدمات نقل الأثاث والعفش في دمياط الجديدة مع مراعاة طبيعة المدينة الحديثة
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.map((service, index) => (
+                <Link key={index} href={service.url} className="group">
+                  <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow group-hover:scale-105 transition-transform duration-200">
+                    <div className="text-4xl mb-4">{service.icon}</div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600">
+                      {service.name}
+                    </h3>
+                    <p className="text-gray-600 mb-4">{service.description}</p>
+                    <div className="flex items-center text-green-600 font-semibold">
+                      <span>اعرف المزيد</span>
+                      <svg className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Work */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                أعمالنا في دمياط الجديدة
+              </h2>
+              <p className="text-lg text-gray-600">
+                مشاريع نقل الأثاث المميزة التي نفذناها في المدينة الجديدة
+              </p>
+            </div>
+
+            <GeoImageGrid
+              images={featuredImages}
+              city={city}
+              columns={3}
+            />
+          </div>
+        </section>
+
+        {/* Why Choose Us - New Damietta Specific */}
+        <section className="py-16 bg-green-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-12">
+              لماذا نحن الاختيار الأمثل في دمياط الجديدة؟
+            </h2>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "خبرة في المدن الحديثة",
+                  description: "نفهم طبيعة التصميم الحديث لدمياط الجديدة والمناطق السكنية المخططة بعناية",
+                  icon: "🏙️"
+                },
+                {
+                  title: "نقل للمجمعات السكنية", 
+                  description: "خبرة واسعة في النقل من وإلى المجمعات السكنية والأبراج السكنية الحديثة",
+                  icon: "🏢"
+                },
+                {
+                  title: "طرق وصول مثلى",
+                  description: "معرفة تامة بأفضل الطرق والمداخل في دمياط الجديدة لتوفير الوقت والجهد",
+                  icon: "🛣️"
+                },
+                {
+                  title: "تعامل مع الأثاث الحديث",
+                  description: "خبرة في التعامل مع الأثاث والتجهيزات الحديثة والمعاصرة",
+                  icon: "🪑"
+                },
+                {
+                  title: "مواعيد دقيقة",
+                  description: "التزام صارم بالمواعيد المحددة مسبقاً مع التنسيق المسبق مع إدارة المجمعات",
+                  icon: "⏰"
+                },
+                {
+                  title: "خدمة متكاملة",
+                  description: "حلول شاملة تشمل النقل والتركيب والتنظيم في المسكن الجديد",
+                  icon: "🔄"
+                }
+              ].map((feature, index) => (
+                <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+                  <div className="text-4xl mb-4">{feature.icon}</div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600">{feature.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ - New Damietta Specific */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-12">
+              أسئلة شائعة حول نقل العفش في دمياط الجديدة
+            </h2>
+            
+            <div className="max-w-4xl mx-auto space-y-6">
+              {[
+                {
+                  question: "هل تقدمون خدمة النقل للمجمعات السكنية في دمياط الجديدة؟",
+                  answer: "نعم، لدينا خبرة واسعة في التعامل مع جميع المجمعات السكنية في دمياط الجديدة مع التنسيق المسبق مع الإدارة."
+                },
+                {
+                  question: "كيف تتعاملون مع الطرق الحديثة في دمياط الجديدة؟",
+                  answer: "فريقنا على دراية تامة بالطرق والشوارع الحديثة وأفضل أوقات الحركة لضمان وصول سريع وآمن."
+                },
+                {
+                  question: "هل يمكنكم نقل الأثاث من دمياط القديمة إلى دمياط الجديدة؟",
+                  answer: "بالطبع، نقدم خدمة النقل بين المدينتين بأسعار مناسبة مع ضمان الأمان الكامل للأثاث."
+                },
+                {
+                  question: "ما هي أوقات العمل المتاحة في دمياط الجديدة؟",
+                  answer: "نعمل طوال أيام الأسبوع مع مراعاة قوانين المجمعات السكنية وأوقات الهدوء المحددة."
+                }
+              ].map((faq, index) => (
+                <div key={index} className="bg-gray-50 p-6 rounded-lg">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    {faq.question}
+                  </h3>
+                  <p className="text-gray-600">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 bg-gradient-to-r from-green-600 to-green-800 text-white">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              احتاج خدمة نقل عفش في دمياط الجديدة؟
+            </h2>
+            <p className="text-xl mb-8 text-green-100">
+              تواصل معنا الآن وسنقدم لك أفضل خدمة نقل عفش في دمياط الجديدة
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href="tel:+201063374834"
+                className="bg-white hover:bg-gray-100 text-green-600 px-8 py-3 rounded-lg font-bold text-lg transition-colors inline-flex items-center space-x-2 space-x-reverse"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg>
+                <span>اتصل: 057-234-5678</span>
+              </a>
+              
+              <a
+                href="https://wa.me/201063374834"
+                className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-3 rounded-lg font-bold text-lg transition-colors inline-flex items-center space-x-2 space-x-reverse"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                </svg>
+                <span>واتساب</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </>
+  );
+}
+
+export const getStaticProps: GetStaticProps<NewDamiettaHubProps> = async () => {
+  // إنشاء JSON-LD للصفحة
+  const businessJsonLd = localBusinessLD({
+    cities: ['newDamietta'],
+    services: [
+      "نقل عفش مجمعات سكنية",
+      "تغليف احترافي", 
+      "فك وتركيب أثاث",
+      "نقل مكاتب",
+      "ونش رفع أثاث"
+    ]
+  });
+
+  // بيانات الخدمات
+  const services = [
+    {
+      name: "نقل عفش مجمعات سكنية",
+      nameEn: "furniture-moving",
+      description: "نقل متخصص للمجمعات والأبراج السكنية في دمياط الجديدة مع التنسيق المسبق",
+      url: "/new-damietta/furniture-moving",
+      icon: "🏢"
+    },
+    {
+      name: "تغليف عفش احترافي",
+      nameEn: "packing",
+      description: "تغليف احترافي بأحدث المواد الواقية مناسب للأثاث الحديث والمعاصر",
+      url: "/new-damietta/packing",
+      icon: "📦"
+    },
+    {
+      name: "فك وتركيب أثاث",
+      nameEn: "assembly",
+      description: "خدمة فك وتركيب الأثاث الحديث والمعاصر بواسطة فنيين متخصصين",
+      url: "/new-damietta/assembly",
+      icon: "🔧"
+    },
+    {
+      name: "نقل مكاتب حديثة",
+      nameEn: "office-moving",
+      description: "نقل المكاتب والشركات في المناطق التجارية الحديثة بدمياط الجديدة",
+      url: "/new-damietta/office-moving",
+      icon: "🏢"
+    },
+    {
+      name: "ونش رفع أثاث",
+      nameEn: "crane",
+      description: "خدمة ونش رفع متطورة للأبراج السكنية والمباني الحديثة",
+      url: "/new-damietta/crane",
+      icon: "🏗️"
+    },
+    {
+      name: "كراتين ومستلزمات",
+      nameEn: "boxes",
+      description: "توفير كراتين متنوعة الأحجام ومواد تغليف مخصصة للنقل الحديث",
+      url: "/new-damietta/boxes",
+      icon: "📋"
+    }
+  ];
+
+  // الصور المميزة لدمياط الجديدة
+  const featuredImages = [
+    {
+      src: "/images/new-damietta-moving-company-worker-4.webp",
+      width: 400,
+      height: 300
+    },
+    {
+      src: "/images/furniture-moving-damietta-worker-loading-boxes.webp", 
+      width: 400,
+      height: 300
+    },
+    {
+      src: "/images/furniture-packing-boxes-damietta-family.webp",
+      width: 400,
+      height: 300
+    },
+    {
+      src: "/images/damietta-moving-company-van-inspection.webp",
+      width: 400,
+      height: 300
+    },
+    {
+      src: "/images/damietta-moving-specialist-6.webp",
+      width: 400,
+      height: 300
+    },
+    {
+      src: "/images/damietta-furniture-crane-operator-5.webp",
+      width: 400,
+      height: 300
+    }
+  ];
+
+  return {
+    props: {
+      jsonLd: [businessJsonLd],
+      services,
+      featuredImages,
+    },
+  };
+};
