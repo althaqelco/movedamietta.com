@@ -2,7 +2,8 @@
 module.exports = {
   siteUrl: process.env.SITE_URL || 'https://movedamietta.com',
   generateRobotsTxt: true,
-  sitemapSize: 7000,
+  sitemapSize: 50000, // زيادة الحد لضمان ملف واحد
+  generateIndexSitemap: false, // منع إنشاء sitemap index
   changefreq: 'weekly',
   priority: 0.7,
   exclude: [

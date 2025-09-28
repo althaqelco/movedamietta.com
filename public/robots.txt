@@ -1,18 +1,6 @@
-# Robots.txt لموقع شركة نقل عفش دمياط
-# movedamietta.com
-
+# *
 User-agent: *
 Allow: /
-
-# الصفحات المسموح بها صراحة
-Allow: /images/
-Allow: /videos/
-Allow: /*.webp
-Allow: /*.mp4
-Allow: /*.jpg
-Allow: /*.png
-
-# الصفحات المحظورة
 Disallow: /admin/
 Disallow: /api/
 Disallow: /private/
@@ -20,43 +8,22 @@ Disallow: /_next/
 Disallow: /404
 Disallow: /500
 
-# محركات البحث الرئيسية
+# Googlebot
 User-agent: Googlebot
 Allow: /
 Allow: /images/
-Allow: /*.webp
-Allow: /*.jpg
-Crawl-delay: 1
+Allow: /videos/
+Allow: *.webp
+Allow: *.mp4
 
+# Bingbot
 User-agent: Bingbot
 Allow: /
 Allow: /images/
-Allow: /*.webp
-Allow: /*.jpg
-Crawl-delay: 2
+Allow: /videos/
 
-User-agent: Yandex
-Allow: /
-Crawl-delay: 3
+# Host
+Host: https://movedamietta.com
 
-# منع البوتات الضارة
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: SemrushBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-# خريطة الموقع
+# Sitemaps
 Sitemap: https://movedamietta.com/sitemap.xml
-
-# معلومات إضافية
-# موقع شركة نقل عفش دمياط الرائدة
-# خدمات: نقل العفش، التغليف، الونش، فك وتركيب
-# المناطق: دمياط، دمياط الجديدة، رأس البر
-# هاتف: 0106-337-4834
