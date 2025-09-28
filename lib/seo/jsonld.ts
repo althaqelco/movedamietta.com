@@ -41,7 +41,7 @@ interface LocalBusinessOptions {
   logo?: string;
   phone?: string;
   address?: typeof COMPANY_INFO.address;
-  cities?: Array<'damietta' | 'newDamietta'>;
+  cities?: Array<'damietta' | 'newDamietta' | 'rasElBar'>;
   services?: string[];
 }
 
@@ -49,7 +49,7 @@ interface LocalBusinessOptions {
  * إنشاء JSON-LD للأعمال المحلية
  */
 export function localBusinessLD(options: LocalBusinessOptions = {}) {
-  const cities = options.cities || ['damietta', 'newDamietta'];
+  const cities = options.cities || ['damietta', 'newDamietta', 'rasElBar'];
   const areaServed = cities.map(city => cityToPlaceLD(city));
 
   return {
@@ -115,7 +115,7 @@ export function localBusinessLD(options: LocalBusinessOptions = {}) {
 interface ServiceOptions {
   name: string;
   description: string;
-  city: 'damietta' | 'newDamietta';
+  city: 'damietta' | 'newDamietta' | 'rasElBar';
   url: string;
   priceRange?: string;
   duration?: string;
@@ -166,7 +166,7 @@ interface ImageOptions {
   url: string;
   width?: number;
   height?: number;
-  city: 'damietta' | 'newDamietta';
+  city: 'damietta' | 'newDamietta' | 'rasElBar';
   alt?: string;
   caption?: string;
 }
@@ -201,7 +201,7 @@ interface VideoOptions {
   thumbnailUrl?: string;
   uploadDate: string;
   duration?: string;
-  city: 'damietta' | 'newDamietta';
+  city: 'damietta' | 'newDamietta' | 'rasElBar';
   embedUrl?: string;
 }
 

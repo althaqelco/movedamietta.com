@@ -6,7 +6,7 @@ import { basename } from 'path';
 interface GeoOptimizedVideoProps {
   src: string;
   poster?: string;
-  city: 'damietta' | 'newDamietta';
+  city: 'damietta' | 'newDamietta' | 'rasElBar';
   name?: string;
   description?: string;
   uploadDate?: string;
@@ -132,7 +132,7 @@ export function EmbeddedGeoVideo({
   containerClassName = '',
 }: {
   embedUrl: string;
-  city: 'damietta' | 'newDamietta';
+  city: 'damietta' | 'newDamietta' | 'rasElBar';
   name: string;
   description?: string;
   thumbnailUrl?: string;
@@ -202,7 +202,7 @@ export function GeoVideoGrid({
     duration?: string;
     uploadDate?: string;
   }>;
-  city: 'damietta' | 'newDamietta';
+  city: 'damietta' | 'newDamietta' | 'rasElBar';
   columns?: 1 | 2 | 3;
 }) {
   const gridCols = {

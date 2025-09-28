@@ -21,7 +21,7 @@ const SITE_CONFIG = {
 interface MetaOptions {
   title: string;
   description: string;
-  city?: 'damietta' | 'newDamietta';
+  city?: 'damietta' | 'newDamietta' | 'rasElBar';
   service?: string;
   canonical?: string;
   image?: string;
@@ -74,7 +74,7 @@ export function buildCanonical(path: string): string {
 /**
  * إنشاء الكلمات المفتاحية
  */
-export function buildKeywords(city: 'damietta' | 'newDamietta', service?: string): string[] {
+export function buildKeywords(city: 'damietta' | 'newDamietta' | 'rasElBar', service?: string): string[] {
   const cityName = CITIES_DATA[city]?.nameAr || '';
   const baseKeywords = [
     `نقل عفش ${cityName}`,
@@ -176,7 +176,7 @@ export function buildMetaTags(options: MetaOptions): Record<string, string> {
 /**
  * إنشاء عنوان للصفحة الرئيسية للمدينة
  */
-export function buildCityHubTitle(city: 'damietta' | 'newDamietta'): string {
+export function buildCityHubTitle(city: 'damietta' | 'newDamietta' | 'rasElBar'): string {
   const cityName = CITIES_DATA[city]?.nameAr || '';
   return `شركة نقل عفش في ${cityName} - خدمة احترافية وآمنة`;
 }
@@ -184,7 +184,7 @@ export function buildCityHubTitle(city: 'damietta' | 'newDamietta'): string {
 /**
  * إنشاء وصف للصفحة الرئيسية للمدينة
  */
-export function buildCityHubDescription(city: 'damietta' | 'newDamietta'): string {
+export function buildCityHubDescription(city: 'damietta' | 'newDamietta' | 'rasElBar'): string {
   const cityName = CITIES_DATA[city]?.nameAr || '';
   return `أفضل شركة نقل عفش في ${cityName}. خدمة احترافية وآمنة لنقل الأثاث والعفش مع التغليف والتأمين. اتصل الآن للحصول على عرض سعر مجاني.`;
 }
@@ -192,7 +192,7 @@ export function buildCityHubDescription(city: 'damietta' | 'newDamietta'): strin
 /**
  * إنشاء عنوان لصفحة الخدمة
  */
-export function buildServicePageTitle(service: string, city: 'damietta' | 'newDamietta'): string {
+export function buildServicePageTitle(service: string, city: 'damietta' | 'newDamietta' | 'rasElBar'): string {
   const cityName = CITIES_DATA[city]?.nameAr || '';
   return `${service} في ${cityName} - خدمة احترافية وآمنة`;
 }
@@ -200,7 +200,7 @@ export function buildServicePageTitle(service: string, city: 'damietta' | 'newDa
 /**
  * إنشاء وصف لصفحة الخدمة
  */
-export function buildServicePageDescription(service: string, city: 'damietta' | 'newDamietta'): string {
+export function buildServicePageDescription(service: string, city: 'damietta' | 'newDamietta' | 'rasElBar'): string {
   const cityName = CITIES_DATA[city]?.nameAr || '';
   return `خدمة ${service} احترافية في ${cityName}. فريق خبير ومعدات حديثة لضمان أفضل جودة. أسعار منافسة وخدمة سريعة. اتصل الآن!`;
 }

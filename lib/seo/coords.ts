@@ -20,6 +20,10 @@ export const CITY_COORDINATES = {
     latitude: 31.426052200000015,
     longitude: 31.80263490273438,
   },
+  rasElBar: {
+    latitude: 31.5095000,
+    longitude: 31.7854000,
+  },
 } as const;
 
 // بيانات المدن الكاملة
@@ -36,6 +40,13 @@ export const CITIES_DATA: Record<string, PlaceData> = {
     nameAr: "دمياط الجديدة",
     geo: CITY_COORDINATES.newDamietta,
     addressCountry: "EG",
+    addressRegion: "Damietta Governorate",
+  },
+  rasElBar: {
+    name: "Ras El Bar",
+    nameAr: "رأس البر",
+    geo: CITY_COORDINATES.rasElBar,
+    addressCountry: "EG", 
     addressRegion: "Damietta Governorate",
   },
 } as const;
@@ -86,6 +97,6 @@ export function getAllCitiesAsPlaces() {
  * تحديد نطاق الخدمة الجغرافي
  */
 export const SERVICE_AREA = {
-  primary: ["damietta", "newDamietta"] as const,
+  primary: ["damietta", "newDamietta", "rasElBar"] as const,
   secondary: ["ras-el-bar"] as const, // مناطق إضافية اختيارية
 };

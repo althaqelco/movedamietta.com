@@ -69,13 +69,13 @@ module.exports = {
     }
     
     // صفحات المدن الرئيسية (أولوية عالية)
-    else if (path.match(/^\/(damietta|new-damietta)\/?$/)) {
+    else if (path.match(/^\/(damietta|new-damietta|ras-el-bar)\/?$/)) {
       priority = 0.9;
       changefreq = 'weekly';
     }
     
     // صفحات الخدمات (أولوية متوسطة عالية)
-    else if (path.match(/^\/(damietta|new-damietta)\/(furniture-moving|packing|assembly|office-moving|crane|boxes)/)) {
+    else if (path.match(/^\/(damietta|new-damietta|ras-el-bar)\/(furniture-moving|packing|assembly|office-moving|crane|boxes)/)) {
       priority = 0.8;
       changefreq = 'weekly';
     }
@@ -110,7 +110,7 @@ module.exports = {
     const result = [];
     
     // إضافة مسارات مخصصة للمحتوى العربي
-    const cities = ['damietta', 'new-damietta'];
+    const cities = ['damietta', 'new-damietta', 'ras-el-bar'];
     const services = ['furniture-moving', 'packing', 'assembly', 'office-moving', 'crane', 'boxes'];
     
     // إنشاء مسارات لجميع الخدمات في جميع المدن
@@ -164,6 +164,12 @@ function getPageGeoData(path) {
     return {
       lat: '31.4364503', 
       lng: '31.678142',
+      region: 'EG-DT'
+    };
+  } else if (path.includes('ras-el-bar')) {
+    return {
+      lat: '31.5095000',
+      lng: '31.7854000',
       region: 'EG-DT'
     };
   }

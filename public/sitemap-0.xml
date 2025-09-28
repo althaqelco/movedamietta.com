@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://movedamietta.com</loc><lastmod>2025-09-27T23:14:12.207Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
-<url><loc>https://movedamietta.com/about</loc><lastmod>2025-09-27T23:14:12.208Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://movedamietta.com/contact</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://movedamietta.com/damietta</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><image:image></image:image><geo:geo>[object Object]</geo:geo></url>
-<url><loc>https://movedamietta.com/damietta/crane</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><image:image></image:image><geo:geo>[object Object]</geo:geo></url>
-<url><loc>https://movedamietta.com/damietta/furniture-moving</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><image:image>[object Object]</image:image><geo:geo>[object Object]</geo:geo></url>
-<url><loc>https://movedamietta.com/damietta/packing</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><image:image>[object Object]</image:image><geo:geo>[object Object]</geo:geo></url>
-<url><loc>https://movedamietta.com/faq</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://movedamietta.com/gallery</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-<url><loc>https://movedamietta.com/new-damietta</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><image:image></image:image><geo:geo>[object Object]</geo:geo></url>
-<url><loc>https://movedamietta.com/new-damietta/crane</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><image:image></image:image><geo:geo>[object Object]</geo:geo></url>
-<url><loc>https://movedamietta.com/new-damietta/furniture-moving</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><image:image>[object Object]</image:image><geo:geo>[object Object]</geo:geo></url>
-<url><loc>https://movedamietta.com/new-damietta/packing</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><image:image>[object Object]</image:image><geo:geo>[object Object]</geo:geo></url>
-<url><loc>https://movedamietta.com/privacy</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-<url><loc>https://movedamietta.com/quote</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://movedamietta.com/services</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-<url><loc>https://movedamietta.com/terms</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-<url><loc>https://movedamietta.com/damietta/assembly</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://movedamietta.com/damietta/office-moving</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://movedamietta.com/damietta/boxes</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://movedamietta.com/new-damietta/assembly</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://movedamietta.com/new-damietta/office-moving</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://movedamietta.com/new-damietta/boxes</loc><lastmod>2025-09-27T23:14:12.209Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://movedamietta.com</loc><lastmod>2025-09-28T14:14:15.570Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://movedamietta.com/about</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://movedamietta.com/contact</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://movedamietta.com/damietta</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><image:image></image:image><geo:geo>[object Object]</geo:geo></url>
+<url><loc>https://movedamietta.com/damietta/crane</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><image:image></image:image><geo:geo>[object Object]</geo:geo></url>
+<url><loc>https://movedamietta.com/damietta/furniture-moving</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><image:image>[object Object]</image:image><geo:geo>[object Object]</geo:geo></url>
+<url><loc>https://movedamietta.com/damietta/packing</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><image:image>[object Object]</image:image><geo:geo>[object Object]</geo:geo></url>
+<url><loc>https://movedamietta.com/faq</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://movedamietta.com/gallery</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://movedamietta.com/new-damietta</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><image:image></image:image><geo:geo>[object Object]</geo:geo></url>
+<url><loc>https://movedamietta.com/new-damietta/crane</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><image:image></image:image><geo:geo>[object Object]</geo:geo></url>
+<url><loc>https://movedamietta.com/new-damietta/furniture-moving</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><image:image>[object Object]</image:image><geo:geo>[object Object]</geo:geo></url>
+<url><loc>https://movedamietta.com/new-damietta/packing</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><image:image>[object Object]</image:image><geo:geo>[object Object]</geo:geo></url>
+<url><loc>https://movedamietta.com/privacy</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://movedamietta.com/quote</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://movedamietta.com/ras-el-bar</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://movedamietta.com/services</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://movedamietta.com/terms</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://movedamietta.com/damietta/assembly</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://movedamietta.com/damietta/office-moving</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://movedamietta.com/damietta/boxes</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://movedamietta.com/new-damietta/assembly</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://movedamietta.com/new-damietta/office-moving</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://movedamietta.com/new-damietta/boxes</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://movedamietta.com/ras-el-bar/furniture-moving</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://movedamietta.com/ras-el-bar/packing</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://movedamietta.com/ras-el-bar/assembly</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://movedamietta.com/ras-el-bar/office-moving</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://movedamietta.com/ras-el-bar/crane</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://movedamietta.com/ras-el-bar/boxes</loc><lastmod>2025-09-28T14:14:15.571Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>

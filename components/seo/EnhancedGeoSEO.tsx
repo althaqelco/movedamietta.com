@@ -6,7 +6,7 @@ interface EnhancedGeoSEOProps {
   title: string;
   description: string;
   canonical?: string;
-  city?: 'damietta' | 'newDamietta';
+  city?: 'damietta' | 'newDamietta' | 'rasElBar';
   service?: string;
   image?: string;
   imageAlt?: string;
@@ -127,10 +127,11 @@ export default function EnhancedGeoSEO({
 /**
  * الحصول على الإحداثيات الجغرافية للمدينة
  */
-function getGeoPosition(city: 'damietta' | 'newDamietta'): string {
+function getGeoPosition(city: 'damietta' | 'newDamietta' | 'rasElBar'): string {
   const coordinates = {
     damietta: '31.417540;31.814444',
     newDamietta: '31.4364503;31.678142',
+    rasElBar: '31.5095000;31.7854000',
   };
   
   return coordinates[city];

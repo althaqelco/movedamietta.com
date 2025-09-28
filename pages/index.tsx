@@ -47,11 +47,11 @@ export default function Home({ jsonLd, featuredCities, featuredServices, heroIma
               <div className="space-y-8">
                 <div className="space-y-4">
                   <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                    شركة نقل عفش
+                    <span className="block">أفضل شركة نقل عفش في</span>
                     <span className="block text-yellow-400">دمياط ودمياط الجديدة</span>
                   </h1>
-                  <p className="text-xl lg:text-2xl text-blue-100">
-                    خدمة احترافية وآمنة لنقل الأثاث والعفش مع ضمان الجودة والوصول في المواعيد المحددة
+                  <p className="text-xl lg:text-2xl text-blue-100 leading-relaxed">
+                    خدمة نقل أثاث احترافية وآمنة منذ 2015 مع أكثر من 5000 عملية نقل ناجحة. نقدم خدمات نقل العفش، التغليف، الونش، وفك وتركيب الأثاث في جميع أنحاء محافظة دمياط بضمان شامل وأسعار تنافسية.
                   </p>
                 </div>
                 
@@ -335,6 +335,283 @@ export default function Home({ jsonLd, featuredCities, featuredServices, heroIma
           </div>
         </section>
 
+        {/* لماذا تختار شركة نقل عفش دمياط؟ */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                لماذا نحن الشركة رقم 1 في نقل العفش بدمياط؟
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                أكثر من 8 سنوات من الخبرة المتميزة في خدمات نقل الأثاث والعفش في دمياط ودمياط الجديدة جعلتنا الخيار الأول لآلاف العائلات المصرية
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-blue-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🏆</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">خبرة موثوقة منذ 2015</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  أكثر من 5000 عملية نقل عفش ناجحة في دمياط ودمياط الجديدة ورأس البر وكفر سعد. نفتخر بثقة عملائنا الذين يعودون إلينا مرة أخرى ويوصون بخدماتنا لأصدقائهم وأقاربهم.
+                </p>
+              </div>
+              
+              <div className="bg-green-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🛡️</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">ضمان شامل وتأمين كامل</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  نوفر تأمين شامل على جميع قطع الأثاث والعفش من لحظة التحميل حتى التسليم في المكان الجديد. ضمان 100% ضد الكسر أو التلف مع تعويض فوري في حالة حدوث أي ضرر.
+                </p>
+              </div>
+              
+              <div className="bg-yellow-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">⚡</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">سرعة ودقة في المواعيد</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  نحن ملتزمون بالمواعيد المحددة مسبقاً. فريق العمل يصل في الوقت المحدد ويكمل عملية النقل بأقصى سرعة ممكنة مع الحفاظ على أعلى معايير الأمان والجودة.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* خدماتنا الشاملة */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                خدمات نقل العفش الشاملة في دمياط
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                نقدم مجموعة متكاملة من خدمات نقل الأثاث والعفش لتلبية جميع احتياجاتك، من الشقق الصغيرة إلى الفلل الكبيرة والمكاتب التجارية
+              </p>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-8">
+                <div className="flex items-start space-x-4 space-x-reverse">
+                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white text-xl">🏠</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">نقل عفش الشقق والمنازل</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      خدمة نقل شاملة للشقق والمنازل من غرفة واحدة إلى 5 غرف. نتعامل مع جميع أنواع الأثاث من غرف النوم والصالونات إلى أجهزة المطبخ والأدوات المنزلية الدقيقة.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4 space-x-reverse">
+                  <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white text-xl">📦</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">تغليف احترافي ومواد عالية الجودة</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      نستخدم أجود أنواع مواد التغليف المقاومة للرطوبة والصدمات. كراتين مقواة، فقاعات هوائية، شرائط لاصقة قوية، وأغطية بلاستيكية لحماية الأثاث من الغبار والخدوش.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4 space-x-reverse">
+                  <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white text-xl">🏗️</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">خدمة الونش لرفع الأثاث</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      أحدث معدات الونش لرفع الأثاث من وإلى الطوابق العليا بأمان تام. مناسب للمناطق الضيقة والشوارع التراثية في دمياط القديمة حيث تصعب عملية النقل التقليدية.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4 space-x-reverse">
+                  <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white text-xl">🔧</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">فك وتركيب الأثاث</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      فريق من الفنيين المتخصصين في فك وتركيب جميع أنواع الأثاث. غرف النوم، المطابخ، الدولاب، الصالونات، وأجهزة التكييف مع ضمان سلامة القطع والتركيب السليم.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="relative">
+                <div className="grid grid-cols-2 gap-4">
+                  <img
+                    src="/images/damietta-furniture-moving-company-worker-1.webp"
+                    alt="فريق نقل عفش دمياط أثناء العمل"
+                    className="rounded-lg shadow-lg"
+                  />
+                  <img
+                    src="/images/furniture-packing-service-damietta.webp"
+                    alt="خدمة تغليف العفش في دمياط"
+                    className="rounded-lg shadow-lg mt-8"
+                  />
+                  <img
+                    src="/images/damietta-moving-service-professional-2.webp"
+                    alt="معدات نقل العفش المتطورة"
+                    className="rounded-lg shadow-lg -mt-8"
+                  />
+                  <img
+                    src="/images/furniture-assembly-damietta-expert-7.webp"
+                    alt="خبير فك وتركيب الأثاث في دمياط"
+                    className="rounded-lg shadow-lg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* مناطق التغطية */}
+        <section className="py-20 bg-blue-900 text-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+                نغطي جميع مناطق محافظة دمياط
+              </h2>
+              <p className="text-xl text-blue-200 max-w-3xl mx-auto leading-relaxed">
+                خدماتنا متاحة في جميع مدن وقرى محافظة دمياط مع فريق عمل محلي يعرف طبيعة المناطق وخصائص الشوارع والمباني
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🏛️</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2">دمياط القديمة</h3>
+                <p className="text-blue-200 text-sm">
+                  المنطقة التراثية والأحياء القديمة مع الشوارع الضيقة والمباني التاريخية. خبرة خاصة في التعامل مع المساحات المحدودة.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🏢</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2">دمياط الجديدة</h3>
+                <p className="text-blue-200 text-sm">
+                  المنطقة الحديثة والمجمعات السكنية والأبراج الجديدة. معدات متطورة مناسبة للمباني العالية والمساحات الواسعة.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🏖️</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2">رأس البر</h3>
+                <p className="text-blue-200 text-sm">
+                  المنطقة الساحلية والمصايف الصيفية. خدمة موسمية مكثفة خلال فصل الصيف مع تركيز على الفلل والشاليهات.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🌾</span>
+                </div>
+                <h3 className="text-xl font-bold mb-2">القرى والمراكز</h3>
+                <p className="text-blue-200 text-sm">
+                  كفر سعد، الروضة، فارسكور، وجميع قرى ومراكز المحافظة. تغطية شاملة للمناطق الريفية مع فهم طبيعة المنازل الشعبية.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* إحصائيات مميزة */}
+        <section className="py-20 bg-gradient-to-r from-green-600 to-blue-600 text-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+                أرقام تتحدث عن تميزنا
+              </h2>
+              <p className="text-xl text-green-100 max-w-2xl mx-auto">
+                إنجازات حقيقية تعكس خبرتنا وتميزنا في مجال نقل العفش بدمياط
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="text-5xl lg:text-6xl font-bold text-yellow-400 mb-2">5000+</div>
+                <div className="text-xl font-semibold mb-2">عملية نقل ناجحة</div>
+                <div className="text-green-200 text-sm">منذ تأسيس الشركة في 2015</div>
+              </div>
+              
+              <div className="text-center">
+                <div className="text-5xl lg:text-6xl font-bold text-yellow-400 mb-2">98%</div>
+                <div className="text-xl font-semibold mb-2">معدل رضا العملاء</div>
+                <div className="text-green-200 text-sm">بناءً على تقييمات العملاء الفعلية</div>
+              </div>
+              
+              <div className="text-center">
+                <div className="text-5xl lg:text-6xl font-bold text-yellow-400 mb-2">24</div>
+                <div className="text-xl font-semibold mb-2">ساعة خدمة يومياً</div>
+                <div className="text-green-200 text-sm">متاحون في جميع أوقات اليوم</div>
+              </div>
+              
+              <div className="text-center">
+                <div className="text-5xl lg:text-6xl font-bold text-yellow-400 mb-2">8</div>
+                <div className="text-xl font-semibold mb-2">سنوات خبرة</div>
+                <div className="text-green-200 text-sm">في خدمة أهل دمياط</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* الأسئلة الشائعة */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                الأسئلة الأكثر شيوعاً حول نقل العفش
+            </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                إجابات شافية لأهم الأسئلة التي يطرحها عملاؤنا حول خدمات نقل الأثاث في دمياط
+              </p>
+            </div>
+            
+            <div className="max-w-4xl mx-auto space-y-6">
+              <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">كم تكلفة نقل العفش في دمياط؟</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  تختلف تكلفة نقل العفش حسب حجم الشقة، نوع الأثاث، المسافة، والخدمات المطلوبة. نقدم عروض أسعار مجانية ومفصلة بعد معاينة المكان. أسعارنا تنافسية وشاملة لجميع الخدمات من التغليف إلى التركيب.
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">هل تقدمون ضمان على الأثاث المنقول؟</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  نعم، نوفر ضمان شامل وتأمين كامل على جميع قطع الأثاث من لحظة التحميل حتى التسليم. في حالة حدوث أي ضرر، نتولى الإصلاح أو التعويض الفوري حسب حالة القطعة.
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">كم من الوقت تستغرق عملية نقل العفش؟</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  تستغرق عملية نقل شقة متوسطة (3 غرف) من 4-6 ساعات تشمل التغليف، الفك، التحميل، النقل، والتركيب. المدة تعتمد على حجم العفش، طبيعة المكان، والمسافة المطلوبة.
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">هل تعملون في أيام الجمع والعطلات؟</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  نحن متاحون 7 أيام في الأسبوع بما في ذلك أيام الجمع والعطلات الرسمية. نفهم أن عملية النقل قد تكون ضرورية في أي وقت، لذلك نوفر خدماتنا على مدار الساعة مع إمكانية الحجز المسبق.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </div>
     </>
   );
@@ -369,6 +646,13 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
       href: "/new-damietta",
       image: "/images/new-damietta-moving-company-worker-4.webp", 
       description: "خدمة متخصصة للمجمعات السكنية والأبراج الحديثة في دمياط الجديدة."
+    },
+    {
+      name: "رأس البر",
+      nameEn: "ras-el-bar", 
+      href: "/ras-el-bar",
+      image: "/images/ras-el-bar-furniture-moving-expert-3.webp",
+      description: "خدمة نقل عفش متخصصة للمنطقة الساحلية والشاليهات والمنتجعات السياحية مع حماية شاملة من العوامل البحرية."
     }
   ];
 

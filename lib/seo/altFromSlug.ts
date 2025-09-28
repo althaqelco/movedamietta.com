@@ -132,7 +132,7 @@ function reorderArabicPhrases(translatedParts: string[]): string[] {
 /**
  * تحويل اسم ملف إلى نص بديل عربي طبيعي
  */
-export function slugToAlt(filename: string, city?: 'damietta' | 'newDamietta'): string {
+export function slugToAlt(filename: string, city?: 'damietta' | 'newDamietta' | 'rasElBar'): string {
   const parts = cleanAndSplitFilename(filename);
   
   // ترجمة كل جزء
@@ -163,7 +163,7 @@ export function slugToAlt(filename: string, city?: 'damietta' | 'newDamietta'): 
 /**
  * إنشاء عنوان وصفي للصورة
  */
-export function slugToTitle(filename: string, city?: 'damietta' | 'newDamietta'): string {
+export function slugToTitle(filename: string, city?: 'damietta' | 'newDamietta' | 'rasElBar'): string {
   const alt = slugToAlt(filename, city);
   return `صورة ${alt}`;
 }
@@ -171,7 +171,7 @@ export function slugToTitle(filename: string, city?: 'damietta' | 'newDamietta')
 /**
  * إنشاء تسمية توضيحية للصورة
  */
-export function slugToCaption(filename: string, city?: 'damietta' | 'newDamietta'): string {
+export function slugToCaption(filename: string, city?: 'damietta' | 'newDamietta' | 'rasElBar'): string {
   const alt = slugToAlt(filename, city);
   return alt;
 }

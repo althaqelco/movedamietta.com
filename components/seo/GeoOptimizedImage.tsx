@@ -5,7 +5,7 @@ import { imageLD } from '@/lib/seo/jsonld';
 import { basename } from 'path';
 
 interface GeoOptimizedImageProps extends Omit<ImageProps, 'alt'> {
-  city: 'damietta' | 'newDamietta';
+  city: 'damietta' | 'newDamietta' | 'rasElBar';
   priority?: boolean;
   caption?: string;
   showCaption?: boolean;
@@ -115,7 +115,7 @@ export function GeoImageGrid({
     height: number;
     caption?: string;
   }>;
-  city: 'damietta' | 'newDamietta';
+  city: 'damietta' | 'newDamietta' | 'rasElBar';
   columns?: 2 | 3 | 4;
 }) {
   const gridCols = {

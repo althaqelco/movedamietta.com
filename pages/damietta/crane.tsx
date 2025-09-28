@@ -42,15 +42,29 @@ export default function DamiettaCranePage({ seo, jsonLd }: DamiettaCraneProps) {
           <div className="relative container mx-auto px-4 py-16 lg:py-24">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="text-center lg:text-right">
-                <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-shadow-lg">
-                  خدمة الونش المتخصصة
-                  <span className="block text-orange-300 text-2xl lg:text-3xl mt-2">
-                    في دمياط
-                  </span>
+                <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-shadow-lg leading-tight">
+                  <span className="block">خدمة الونش الأكثر أماناً</span>
+                  <span className="block">وإحترافية في</span>
+                  <span className="block text-orange-300">دمياط والنيل</span>
                 </h1>
                 <p className="text-xl lg:text-2xl mb-8 leading-relaxed opacity-95">
-                  رفع ونقل الأثاث والأجهزة الثقيلة بأمان تام مع أحدث معدات الونش الهيدروليكي
+                  خدمة ونش متخصصة في رفع ونقل الأثاث والأجهزة الثقيلة بأمان مطلق في دمياط القديمة والجديدة. نستخدم أحدث معدات الونش الهيدروليكي بقدرات مختلفة تصل إلى 500 كجم، مع فريق مدرب على أعلى معايير السلامة المهنية للتعامل مع المباني التراثية والحديثة.
                 </p>
+                
+                <div className="grid md:grid-cols-3 gap-4 max-w-2xl mx-auto lg:mx-0 mb-8">
+                  <div className="text-center bg-orange-800/50 rounded-lg p-4">
+                    <div className="text-2xl font-bold text-orange-300 mb-1">500kg</div>
+                    <div className="text-sm">قدرة رفع قصوى</div>
+                  </div>
+                  <div className="text-center bg-orange-800/50 rounded-lg p-4">
+                    <div className="text-2xl font-bold text-orange-300 mb-1">15m</div>
+                    <div className="text-sm">ارتفاع رفع أقصى</div>
+                  </div>
+                  <div className="text-center bg-orange-800/50 rounded-lg p-4">
+                    <div className="text-2xl font-bold text-orange-300 mb-1">100%</div>
+                    <div className="text-sm">ضمان السلامة</div>
+                  </div>
+                </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                   <a 
                     href="tel:+201063374834" 
@@ -244,14 +258,236 @@ export default function DamiettaCranePage({ seo, jsonLd }: DamiettaCraneProps) {
           </div>
         </section>
 
+        {/* أنواع خدمات الونش */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                أنواع خدمات الونش المتخصصة في دمياط
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                نقدم مجموعة شاملة من خدمات الونش لتلبية جميع احتياجات الرفع والنقل في دمياط القديمة والجديدة
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-orange-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🏢</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">ونش المباني العالية</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  خدمة متخصصة لرفع الأثاث إلى الطوابق العالية في الأبراج والمجمعات السكنية في دمياط الجديدة، مع معدات ونش قوية تصل إلى الدور العاشر.
+                </p>
+              </div>
+              
+              <div className="bg-blue-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🏛️</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">ونش المباني التراثية</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  معدات ونش خاصة مصممة للتعامل مع المباني التراثية في دمياط القديمة، مع حماية كاملة للنوافذ والشرفات الخشبية والزخارف المعمارية.
+                </p>
+              </div>
+              
+              <div className="bg-green-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🏗️</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">ونش الأماكن الضيقة</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  ونش متنقل صغير الحجم مخصص للشوارع الضيقة والأزقة في الأحياء الشعبية، مع إمكانية المناورة في المساحات المحدودة جداً.
+                </p>
+              </div>
+              
+              <div className="bg-purple-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">⚡</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">ونش الطوارئ</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  خدمة ونش عاجلة متاحة 24/7 لحالات الطوارئ، مع وقت استجابة أقل من ساعتين في جميع أنحاء دمياط لمواجهة الحالات العاجلة.
+                </p>
+              </div>
+              
+              <div className="bg-yellow-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🚢</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">ونش المناطق النيلية</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  خدمة خاصة للمنازل المطلة على النيل والكورنيش، مع اتخاذ احتياطات إضافية ضد الرطوبة ومراعاة خصوصية المناطق المائية.
+                </p>
+              </div>
+              
+              <div className="bg-red-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">💎</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">ونش القطع الثمينة</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  خدمة متخصصة للقطع الثمينة والأثاث الفاخر مع تغليف إضافي وحماية مشددة وتأمين شامل ضد أي ضرر أثناء عملية الرفع.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* مميزات خدمة الونش */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                لماذا تختار خدمة الونش المتميزة لدينا؟
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                معدات حديثة، فريق محترف، وسنوات من الخبرة في التعامل مع تحديات الرفع في دمياط
+              </p>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-8">
+                <div className="flex items-start space-x-4 space-x-reverse">
+                  <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white text-xl">🛡️</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">أعلى معايير السلامة</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      نتبع بروتوكولات السلامة الدولية مع فحص دوري لجميع المعدات وتدريب مستمر للفريق على أحدث تقنيات السلامة المهنية وإدارة المخاطر في عمليات الرفع.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4 space-x-reverse">
+                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white text-xl">⚙️</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">معدات ونش متطورة</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      نستخدم أحدث معدات الونش الهيدروليكي من الماركات العالمية المعروفة، مع صيانة دورية وقطع غيار أصلية لضمان الأداء المثالي والموثوقية العالية.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4 space-x-reverse">
+                  <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white text-xl">👨‍🔧</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">فريق مشغلي ونش محترفين</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      مشغلو ونش مرخصون ومدربون على أعلى المستويات، مع سنوات من الخبرة في التعامل مع مختلف أنواع المباني والتحديات الفريدة لمدينة دمياط وطبيعتها الجغرافية.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4 space-x-reverse">
+                  <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white text-xl">📋</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">تخطيط مسبق ومعاينة دقيقة</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      دراسة شاملة للموقع قبل البدء بالعمل، مع تحديد أفضل نقاط الرفع وتقييم المخاطر المحتملة ووضع خطة تفصيلية لضمان تنفيذ العملية بسلاسة ودقة.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="relative">
+                <div className="bg-orange-900 text-white p-8 rounded-2xl">
+                  <h3 className="text-2xl font-bold mb-6">خدمة الونش المتكاملة</h3>
+                  
+                  <div className="space-y-6">
+                    <div className="border-l-4 border-orange-400 pl-4">
+                      <h4 className="font-bold mb-2">قبل الرفع</h4>
+                      <p className="text-orange-100 text-sm">معاينة شاملة، تحضير المعدات، تأمين المنطقة</p>
+                    </div>
+                    
+                    <div className="border-l-4 border-orange-400 pl-4">
+                      <h4 className="font-bold mb-2">أثناء الرفع</h4>
+                      <p className="text-orange-100 text-sm">مراقبة مستمرة، تحكم دقيق، حماية كاملة للأثاث</p>
+                    </div>
+                    
+                    <div className="border-l-4 border-orange-400 pl-4">
+                      <h4 className="font-bold mb-2">بعد الرفع</h4>
+                      <p className="text-orange-100 text-sm">فحص سلامة القطع، تنظيف الموقع، ضمان الجودة</p>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-8 p-4 bg-orange-800 rounded-lg">
+                    <div className="grid grid-cols-2 gap-4 text-center">
+                      <div>
+                        <div className="text-2xl font-bold text-orange-300">8</div>
+                        <div className="text-xs">سنوات خبرة</div>
+                      </div>
+                      <div>
+                        <div className="text-2xl font-bold text-orange-300">1000+</div>
+                        <div className="text-xs">عملية رفع ناجحة</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* الأسئلة الشائعة حول خدمة الونش */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                أسئلة شائعة حول خدمة الونش في دمياط
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                إجابات شاملة لأهم الأسئلة حول خدمات الونش ورفع الأثاث في دمياط
+              </p>
+            </div>
+            
+            <div className="max-w-4xl mx-auto space-y-6">
+              <div className="bg-gray-50 rounded-lg shadow-sm border border-gray-200 p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">ما هي أقصى قدرة رفع للونش المتوفر لديكم؟</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  لدينا معدات ونش متنوعة بقدرات رفع مختلفة تبدأ من 200 كجم للقطع الصغيرة وتصل إلى 500 كجم للأثاث الثقيل مثل الخزائن الكبيرة والثلاجات وأجهزة التكييف المركزي.
+                </p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg shadow-sm border border-gray-200 p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">هل يمكن استخدام الونش في الشوارع الضيقة بدمياط القديمة؟</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  نعم، لدينا معدات ونش متنقلة صغيرة الحجم مصممة خصيصاً للعمل في الشوارع الضيقة والأزقة التراثية. كما نوفر خدمة الونش اليدوي للمساحات الضيقة جداً مع فريق متخصص.
+                </p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg shadow-sm border border-gray-200 p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">كم يستغرق وقت رفع قطعة أثاث واحدة؟</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  يختلف الوقت حسب نوع القطعة والارتفاع، لكن في المتوسط تستغرق عملية رفع قطعة واحدة من 10-20 دقيقة شاملة التحضير والتأمين. العملية الكاملة لشقة متوسطة تستغرق 2-4 ساعات.
+                </p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg shadow-sm border border-gray-200 p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">هل هناك ضمان ضد تلف الأثاث أثناء الرفع؟</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  نوفر ضمان شامل وتأمين كامل على جميع القطع المرفوعة. في حالة حدوث أي ضرر (وهو نادر جداً)، نتحمل كامل تكلفة الإصلاح أو التعويض فوراً حسب قيمة القطعة.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* اتصل بنا */}
         <section className="py-16 bg-gradient-orange text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              احجز خدمة الونش الآن
+              احجز خدمة الونش الاحترافية الآن
             </h2>
-            <p className="text-xl mb-8 opacity-95 max-w-2xl mx-auto">
-              تواصل معنا واحصل على استشارة مجانية وعرض سعر تنافسي لخدمة الونش في دمياط
+            <p className="text-xl mb-8 opacity-95 max-w-3xl mx-auto leading-relaxed">
+              تواصل معنا واحصل على استشارة مجانية وعرض سعر تنافسي لخدمة الونش المتخصصة في دمياط. فريقنا المحترف جاهز لخدمتكم على مدار الساعة
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
@@ -282,14 +518,18 @@ export default function DamiettaCranePage({ seo, jsonLd }: DamiettaCraneProps) {
 
 export const getStaticProps: GetStaticProps<DamiettaCraneProps> = async () => {
   const seoData = buildMetaTags({
-    title: 'خدمة الونش في دمياط - رفع الأثاث بأمان',
-    description: 'أفضل خدمة ونش لرفع ونقل الأثاث في دمياط. معدات حديثة وفريق محترف. اتصل الآن للحصول على عرض مجاني.'
+    title: 'خدمة الونش الأكثر أماناً في دمياط - رفع الأثاث الاحترافي بضمان شامل',
+    description: 'أفضل خدمة ونش متخصصة في دمياط لرفع الأثاث بأمان. معدات هيدروليكية حديثة، فريق مدرب، تأمين شامل. خبرة 8 سنوات في الشوارع الضيقة والمباني التراثية. خدمة 24/7.'
   });
 
   const seo = {
-    title: seoData.title || 'خدمة الونش في دمياط',
-    description: seoData.description || 'أفضل خدمة ونش لرفع ونقل الأثاث في دمياط',
-    keywords: Array.isArray(seoData.keywords) ? seoData.keywords : ['ونش', 'رفع أثاث', 'دمياط', 'نقل عفش']
+    title: seoData.title || 'خدمة الونش الأكثر أماناً في دمياط - رفع الأثاث الاحترافي',
+    description: seoData.description || 'أفضل خدمة ونش متخصصة في دمياط لرفع الأثاث بأمان مطلق',
+    keywords: Array.isArray(seoData.keywords) ? seoData.keywords : [
+      'ونش دمياط', 'رفع أثاث دمياط', 'نقل عفش بالونش', 'ونش هيدروليكي', 
+      'رفع أثاث آمن', 'ونش المباني العالية', 'ونش الشوارع الضيقة', 'خدمة ونش 24/7',
+      'رفع أثاث تراثي', 'ونش احترافي', 'معدات رفع حديثة', 'تأمين الأثاث'
+    ]
   };
 
   const jsonLd = [
