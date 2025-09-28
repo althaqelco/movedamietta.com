@@ -1,6 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap><loc>https://movedamietta.com/sitemap-0.xml</loc></sitemap>
-<sitemap><loc>https://new-damietta-moving.com/sitemap-images.xml</loc></sitemap>
-<sitemap><loc>https://new-damietta-moving.com/sitemap-videos.xml</loc></sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- الصفحة الرئيسية -->
+  <url>
+    <loc>https://movedamietta.com/</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://movedamietta.com/images/damietta-apartment-furniture-moving.webp</image:loc>
+      <image:caption>أفضل شركة نقل عفش في دمياط ودمياط الجديدة</image:caption>
+      <image:title>نقل عفش احترافي في دمياط</image:title>
+    </image:image>
+  </url>
+
+  <!-- صفحات المدن الرئيسية -->
+  <url>
+    <loc>https://movedamietta.com/damietta</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://movedamietta.com/images/damietta-apartment-furniture-moving.webp</image:loc>
+      <image:caption>خدمات نقل العفش في دمياط القديمة</image:caption>
+      <image:title>شركة نقل عفش دمياط</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://movedamietta.com/new-damietta</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://movedamietta.com/images/new-damietta-moving-company-worker-4.webp</image:loc>
+      <image:caption>خدمات نقل العفش في دمياط الجديدة</image:caption>
+      <image:title>شركة نقل عفش دمياط الجديدة</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://movedamietta.com/ras-el-bar</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://movedamietta.com/images/ras-el-bar-furniture-moving-expert-3.webp</image:loc>
+      <image:caption>خدمات نقل العفش المتخصصة في رأس البر الساحلية</image:caption>
+      <image:title>شركة نقل عفش رأس البر</image:title>
+    </image:image>
+  </url>
+
+  <!-- خدمات دمياط -->
+  <url>
+    <loc>https://movedamietta.com/damietta/furniture-moving</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://movedamietta.com/images/damietta-furniture-moving-company-worker-1.webp</image:loc>
+      <image:caption>خدمة نقل الأثاث والعفش في دمياط</image:caption>
+      <image:title>نقل أثاث دمياط</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://movedamietta.com/damietta/crane</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://movedamietta.com/images/damietta-furniture-crane-operator-5.webp</image:loc>
+      <image:caption>خدمة الونش لرفع الأثاث في دمياط</image:caption>
+      <image:title>ونش رفع عفش دمياط</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://movedamietta.com/damietta/packing</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://movedamietta.com/images/furniture-packing-service-damietta.webp</image:loc>
+      <image:caption>خدمة تغليف العفش الاحترافية في دمياط</image:caption>
+      <image:title>تغليف عفش دمياط</image:title>
+    </image:image>
+  </url>
+
+  <!-- خدمات دمياط الجديدة -->
+  <url>
+    <loc>https://movedamietta.com/new-damietta/furniture-moving</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://movedamietta.com/images/new-damietta-moving-company-worker-4.webp</image:loc>
+      <image:caption>خدمة نقل الأثاث والعفش في دمياط الجديدة</image:caption>
+      <image:title>نقل أثاث دمياط الجديدة</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://movedamietta.com/new-damietta/crane</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://movedamietta.com/images/damietta-moving-service-professional-2.webp</image:loc>
+      <image:caption>خدمة الونش لرفع الأثاث في دمياط الجديدة</image:caption>
+      <image:title>ونش رفع عفش دمياط الجديدة</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://movedamietta.com/new-damietta/packing</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://movedamietta.com/images/furniture-packing-boxes-damietta-family.webp</image:loc>
+      <image:caption>خدمة تغليف العفش الاحترافية في دمياط الجديدة</image:caption>
+      <image:title>تغليف عفش دمياط الجديدة</image:title>
+    </image:image>
+  </url>
+
+  <!-- الصفحات العامة -->
+  <url>
+    <loc>https://movedamietta.com/services</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://movedamietta.com/images/damietta-moving-company-van-inspection.webp</image:loc>
+      <image:caption>جميع خدمات نقل العفش المتاحة</image:caption>
+      <image:title>خدمات نقل العفش</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://movedamietta.com/about</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://movedamietta.com/images/damietta-moving-specialist-6.webp</image:loc>
+      <image:caption>عن شركة نقل العفش في دمياط</image:caption>
+      <image:title>من نحن - شركة نقل العفش</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://movedamietta.com/contact</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://movedamietta.com/quote</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://movedamietta.com/gallery</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://movedamietta.com/images/furniture-moving-damietta-worker-loading-boxes.webp</image:loc>
+      <image:caption>معرض أعمال نقل العفش</image:caption>
+      <image:title>معرض الأعمال</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://movedamietta.com/faq</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- الصفحات القانونية -->
+  <url>
+    <loc>https://movedamietta.com/privacy</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://movedamietta.com/terms</loc>
+    <lastmod>2025-09-28T15:30:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

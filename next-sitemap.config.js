@@ -35,8 +35,8 @@ module.exports = {
         userAgent: 'Googlebot',
         allow: [
           '/',
-          '/public/images/',
-          '/public/videos/',
+          '/images/',
+          '/videos/',
           '*.webp',
           '*.mp4'
         ]
@@ -45,14 +45,10 @@ module.exports = {
         userAgent: 'Bingbot',
         allow: [
           '/',
-          '/public/images/',
-          '/public/videos/'
+          '/images/',
+          '/videos/'
         ]
       }
-    ],
-    additionalSitemaps: [
-      'https://new-damietta-moving.com/sitemap-images.xml',
-      'https://new-damietta-moving.com/sitemap-videos.xml',
     ]
   },
 
@@ -96,12 +92,7 @@ module.exports = {
       loc: path,
       lastmod: new Date().toISOString(),
       changefreq,
-      priority,
-      // إضافة معلومات جغرافية للصفحات المحلية
-      ...(path.includes('damietta') && {
-        'image:image': getPageImages(path),
-        'geo:geo': getPageGeoData(path)
-      })
+      priority
     };
   },
 
@@ -129,49 +120,4 @@ module.exports = {
   }
 };
 
-// الحصول على صور الصفحة لإدراجها في الـ sitemap
-function getPageImages(path) {
-  const images = [];
-  
-  if (path.includes('damietta')) {
-    if (path.includes('furniture-moving')) {
-      images.push({
-        url: 'https://new-damietta-moving.com/images/damietta-apartment-furniture-moving.webp',
-        caption: 'نقل عفش شقق في دمياط'
-      });
-    }
-    if (path.includes('packing')) {
-      images.push({
-        url: 'https://new-damietta-moving.com/images/furniture-packing-service-damietta.webp',
-        caption: 'خدمة تغليف عفش في دمياط'
-      });
-    }
-    // إضافة المزيد من الصور حسب نوع الصفحة
-  }
-  
-  return images;
-}
-
-// الحصول على البيانات الجغرافية للصفحة
-function getPageGeoData(path) {
-  if (path.includes('damietta') && !path.includes('new-damietta')) {
-    return {
-      lat: '31.417540',
-      lng: '31.814444',
-      region: 'EG-DT'
-    };
-  } else if (path.includes('new-damietta')) {
-    return {
-      lat: '31.4364503', 
-      lng: '31.678142',
-      region: 'EG-DT'
-    };
-  } else if (path.includes('ras-el-bar')) {
-    return {
-      lat: '31.5095000',
-      lng: '31.7854000',
-      region: 'EG-DT'
-    };
-  }
-  return null;
-}
+// جميع الصفحات محسنة بأولويات مناسبة لـ SEO
