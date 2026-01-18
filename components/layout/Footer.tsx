@@ -254,6 +254,23 @@ export default function Footer() {
                   <li>• خدمة طوارئ 24 ساعة</li>
                 </ul>
               </div>
+
+              <div className="pt-4 border-t border-gray-700">
+                <h4 className="font-semibold mb-2">شركاء موثوقون:</h4>
+                <p className="text-sm text-gray-400 mb-2">هل تبحث عن عقار جديد في دمياط؟</p>
+                <a
+                  href="https://eltaiseer.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="التيسير للعقارات - شقق وفيلات للبيع في دمياط الجديدة والمنصورة الجديدة"
+                  className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors text-sm"
+                >
+                  <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                  </svg>
+                  التيسير للعقارات - عقارات دمياط الجديدة
+                </a>
+              </div>
             </div>
           </div>
         </div>
